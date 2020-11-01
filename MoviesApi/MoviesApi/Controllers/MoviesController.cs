@@ -17,10 +17,16 @@ namespace MoviesApi.Controllers
         }
 
         [HttpGet]
-        public ActionResult<List<Movie>> GetMovies()
+        public ActionResult<List<Movie>> GetMovies(
+            [FromQuery(Name = "title")] string title,
+            [FromQuery(Name = "country")] string country,
+            [FromQuery(Name = "language")] string language,
+            [FromQuery(Name = "sortDirection")] string sortDirection)
         {
-            return Ok(_moviesRepository.GetMovies().ToList());
+            var result = _moviesRepository.GetMovies(title, country, language, sortDirection).ToList();
+            return Ok(result);
         }
 
+        // TODO: Validate parameters
     }
 }

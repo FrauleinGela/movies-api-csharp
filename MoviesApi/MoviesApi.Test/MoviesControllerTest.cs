@@ -5,6 +5,7 @@ using MoviesApi.Models;
 using MoviesApi.Repository;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using Xunit;
 
 namespace MoviesApi.Test
@@ -62,7 +63,7 @@ namespace MoviesApi.Test
             using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
             {
                 var controller = CreateController(moviesDbContext);
-                var actionResult = controller.GetMovies();
+                var actionResult = controller.GetMovies(null, null, null, null);
                 var result = actionResult.Result as OkObjectResult;
                 var movies = (List<Movie>)result.Value;
                 Assert.IsType<OkObjectResult>(result);
@@ -71,5 +72,91 @@ namespace MoviesApi.Test
 
         }
 
+        [Fact]
+        public void GetMoviesWithTitleFilteringReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("Movie title 1", "", "", "");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Single(movies);
+            }
+
+        }
+
+        [Fact]
+        public void GetMoviesWithLanguangeFilteringReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("", "", "English, Spanish", "");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal(10, movies.Count);
+
+                var actionResult2 = controller.GetMovies("", "", "Spanish", "");
+                var result2 = actionResult2.Result as OkObjectResult;
+                var movies2 = (List<Movie>)result2.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal(10, movies2.Count);
+            }
+
+        }
+        [Fact]
+        public void GetMoviesWithCountryFilteringReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("", "USA, France", "", "");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal(10, movies.Count);
+            }
+        }
+
+        [Fact]
+        public void GetMoviesSortedDescendingReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("", "", "", "DESC");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal("tt0073486-9", movies.First().ImdbID);
+                Assert.Equal("tt0073486-0", movies.Last().ImdbID);
+            }
+
+        }
+
+
+        [Fact]
+        public void GetMoviesSortedAscendingReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("", "", "", "ASC");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal("tt0073486-0", movies.First().ImdbID);
+                Assert.Equal("tt0073486-9", movies.Last().ImdbID);
+            }
+
+        }
     }
 }

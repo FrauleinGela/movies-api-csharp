@@ -89,6 +89,22 @@ namespace MoviesApi.Test
         }
 
         [Fact]
+        public void GetMoviesWithInsensitiveCaseReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var controller = CreateController(moviesDbContext);
+                var actionResult = controller.GetMovies("movie tiTle 1", "", "", "");
+                var result = actionResult.Result as OkObjectResult;
+                var movies = (List<Movie>)result.Value;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Single(movies);
+            }
+
+        }
+
+        [Fact]
         public void GetMoviesWithLanguangeFilteringReturnOkResult()
         {
             SeedDummyData();

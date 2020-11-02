@@ -16,7 +16,7 @@ namespace MoviesApi.Repository
         {
             var moviesRoot = _dbContext.Movies;
             Expression<Func<Movie, bool>> filterByTitle, filterByCountry, filterByLanguage;
-            filterByTitle = item => item.Title.Contains(string.IsNullOrEmpty(title) ? "" : title.Trim());
+            filterByTitle = item => item.Title.ToLower().Contains(string.IsNullOrEmpty(title) ? "" : title.ToLower().Trim());
             filterByCountry = item => item.Country.Contains(string.IsNullOrEmpty(country) ? "" : country.Trim());
             filterByLanguage = item => item.Language.Contains(string.IsNullOrEmpty(language) ? "" : language.Trim());
             var itemsExpression = moviesRoot.Where(filterByTitle)

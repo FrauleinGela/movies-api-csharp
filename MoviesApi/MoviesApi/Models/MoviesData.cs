@@ -19,7 +19,7 @@
                 Language = "English",
                 Country = "USA",
                 Awards = "Nominated for 7 Oscars. Another 21 wins & 36 nominations.",
-                Poster = "https=//m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+                Poster = "https://m.media-amazon.com/images/M/MV5BMDFkYTc0MGEtZmNhMC00ZDIzLWFmNTEtODM1ZmRlYWMwMWFmXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
 
                 ImdbRating = "9.3",
                 ImdbID = "tt0111161"
@@ -39,7 +39,7 @@
             Language = "English",
             Country = "USA",
             Awards = "Won 5 Oscars. Another 30 wins & 15 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BZjA0OWVhOTAtYWQxNi00YzNhLWI4ZjYtNjFjZTEyYjJlNDVlL2ltYWdlL2ltYWdlXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
 
             ImdbRating = "8.7",
             ImdbID = "tt0073486"
@@ -59,7 +59,7 @@
             Language = "English, Italian, Latin",
             Country = "USA",
             Awards = "Won 3 Oscars. Another 26 wins & 30 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BM2MyNjYxNmUtYTAwNi00MTYxLWJmNWYtYzZlODY3ZTk3OTFlXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
 
             ImdbRating = "9.2",
             ImdbID = "tt0068646"
@@ -79,7 +79,7 @@
             Language = "English, Mandarin",
             Country = "USA, UK",
             Awards = "Won 2 Oscars. Another 153 wins & 160 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_SX300.jpg",
 
             ImdbRating = "9.0",
             ImdbID = "tt0468569"
@@ -99,7 +99,7 @@
             Language = "English, Hebrew, German, Polish, Latin",
             Country = "USA",
             Awards = "Won 7 Oscars. Another 83 wins & 50 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BNDE4OTMxMTctNmRhYy00NWE2LTg3YzItYTk3M2UwOTU5Njg4XkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
 
             ImdbRating = "8.9",
             ImdbID = "tt0108052"
@@ -119,7 +119,7 @@
             Language = "English, Spanish, French",
             Country = "USA",
             Awards = "Won 1 Oscar. Another 69 wins & 75 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BNGNhMDIzZTUtNTBlZi00MTRlLWFjM2ItYzViMjE3YzI5MjljXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
 
             ImdbRating = "8.9",
             ImdbID = "tt0110912"
@@ -138,7 +138,7 @@
             Language = "Italian",
             Country = "Italy, Spain, West Germany",
             Awards = "2 wins & 4 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BOTQ5NDI3MTI4MF5BMl5BanBnXkFtZTgwNDQ4ODE5MDE@._V1_SX300.jpg",
             ImdbRating = "8.8",
             ImdbID = "tt0060196"
         },
@@ -157,7 +157,7 @@
             Language = "English",
             Country = "USA, Germany",
             Awards = "Nominated for 1 Oscar. Another 11 wins & 37 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BMmEzNTkxYjQtZTc0MC00YTVjLTg5ZTEtZWMwOWVlYzY0NWIwXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
             ImdbRating = "8.8",
             ImdbID = "tt0137523"
         },
@@ -176,7 +176,7 @@
             Language = "English",
             Country = "USA",
             Awards = "Won 6 Oscars. Another 44 wins & 75 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BNWIwODRlZTUtY2U3ZS00Yzg1LWJhNzYtMmZiYmEyNmU1NjMzXkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
 
             ImdbRating = "8.8",
             ImdbID = "tt0109830"
@@ -196,7 +196,7 @@
             Language = "English, Japanese, French",
             Country = "USA, UK",
             Awards = "Won 4 Oscars. Another 152 wins & 218 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300.jpg",
 
             ImdbRating = "8.8",
             ImdbID = "tt1375666"
@@ -216,7 +216,7 @@
             Language = "English",
             Country = "USA",
             Awards = "Won 4 Oscars. Another 37 wins & 51 nominations.",
-            Poster = "https=//m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
+            Poster = "https://m.media-amazon.com/images/M/MV5BNzQzOTk3OTAtNDQ0Zi00ZTVkLWI0MTEtMDllZjNkYzNjNTc4L2ltYWdlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300.jpg",
             ImdbRating = "8.7",
             ImdbID = "tt0133093"
         });

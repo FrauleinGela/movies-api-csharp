@@ -1,7 +1,9 @@
-﻿using MoviesApi.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using MoviesApi.Models;
 using System;
 using System.Linq;
 using System.Linq.Expressions;
+using System.Threading.Tasks;
 
 namespace MoviesApi.Repository
 {
@@ -28,6 +30,10 @@ namespace MoviesApi.Repository
                 itemsExpression = itemsExpression.OrderBy(item => item.Title);
 
             return itemsExpression;
+        }
+        public async Task<Movie> GetMovie(string imdbId)
+        {
+            return await _dbContext.Movies.SingleOrDefaultAsync(m => m.ImdbID == imdbId);
         }
     }
 }

@@ -174,5 +174,38 @@ namespace MoviesApi.Test
             }
 
         }
+
+        [Fact]
+        public async void GetMovieReturnOkResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var imdbId = "tt0073486-9";
+                var controller = CreateController(moviesDbContext);
+                var actionResult = await controller.GetMovieAsync(imdbId);
+                var result = actionResult.Result as OkObjectResult;
+                var movie = result.Value as Movie;
+                Assert.IsType<OkObjectResult>(result);
+                Assert.Equal(200, result.StatusCode);
+                Assert.NotNull(movie);
+                Assert.Equal(imdbId, movie.ImdbID);
+            }
+
+        }
+        [Fact]
+        public async void GetMovieReturnNotFoundResult()
+        {
+            SeedDummyData();
+            using (var moviesDbContext = new MoviesDbContext(_dbContextOptions))
+            {
+                var imdbId = "xxxxx";
+                var controller = CreateController(moviesDbContext);
+                var actionResult = await controller.GetMovieAsync(imdbId);
+                var result = actionResult.Result as NotFoundObjectResult;
+                Assert.Equal(404, result.StatusCode);
+            }
+
+        }
     }
 }

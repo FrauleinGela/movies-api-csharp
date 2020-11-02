@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using MoviesApi.Models;
 using MoviesApi.Repository;
@@ -25,6 +26,15 @@ namespace MoviesApi.Controllers
         {
             var result = _moviesRepository.GetMovies(title, country, language, sortDirection).ToList();
             return Ok(result);
+        }
+
+        [HttpGet("{imdbId}")]
+
+        public async Task<ActionResult<Task<Movie>>> GetMovieAsync([FromRoute] string imdbId)
+        {
+            var movie = await _moviesRepository.GetMovie(imdbId);
+            if (movie != null) return Ok(movie);
+            return NotFound(new { message = "Item not found" });
         }
 
         // TODO: Validate parameters

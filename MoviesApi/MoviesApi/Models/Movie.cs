@@ -1,4 +1,6 @@
-﻿namespace MoviesApi.Models
+﻿using System.Collections.Generic;
+
+namespace MoviesApi.Models
 {
     public class Movie
     {
@@ -18,5 +20,6 @@
         public string Awards { get; set; }
         public string ImdbRating { get; set; }
         public string ImdbID { get; set; }
+        public ICollection<MovieBooking> MovieBookings { get; set; }
     }
 }

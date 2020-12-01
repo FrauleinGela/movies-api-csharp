@@ -1,6 +1,6 @@
 # movies-api-csharp
-This project stores movies in memory and offers endpoints to search movies by title, country, language.
-Contains Authorization JWT Configuration that can be customized with your own OAUTH .
+- Stores movies in memory and offers endpoints to search movies by title, country, language.
+- Contains Authorization JWT Configuration that can be customized with your own OAUTH .
 The values may be added directly in appSettings.json <br>
 See example: <br>
 `

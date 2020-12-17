@@ -1,6 +1,9 @@
 # movies-api-csharp
 - Stores movies in memory and offers endpoints to search movies by title, country, language.
 - Contains Authorization JWT Configuration that can be customized with your own OAUTH .
+- Api can book, unbook a movie.
+- Api can show all booked movies from a user
+
 The values may be added directly in appSettings.json <br>
 See example: <br>
 `
@@ -9,12 +12,6 @@ See example: <br>
     "Audience": "YOUR_AUDIENCE"
   }
 `
-
-## TODO
- * Create Booking Model
- * Create endpoint to check if a movie is booked (Booking) => Find movie in booking
- * Check a movie if its booked by a user 
- * Add login = > If login succeeds then store the token in the local storage, a token that is returned from the Api created with a JwtSecurityToken)
 
 ## ASP.NET Core
 ASP.NET Core is an open-source and cross-platform framework for building modern cloud based internet connected applications, such as web apps, IoT apps and mobile backends. ASP.NET Core apps run on .NET Core, a free, cross-platform and open-source application runtime. It was architected to provide an optimized development framework for apps that are deployed to the cloud or run on-premises. It consists of modular components with minimal overhead, so you retain flexibility while constructing your solutions. You can develop and run your ASP.NET Core apps cross-platform on Windows, Mac and Linux. Learn more about ASP.NET Core.
